@@ -1,0 +1,16 @@
+{
+  "name": "virtual-keyboard",
+  "version": "1.0.0",
+  "description": "RSS 2023Q1 task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "virtual-keyboard",
+    "rss",
+    "2023Q1"
+  ],
+  "author": "Skorbezh Artem",
+  "license": "ISC"
+}
