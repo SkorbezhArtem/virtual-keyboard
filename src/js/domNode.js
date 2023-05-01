@@ -1,4 +1,4 @@
-export default function createDomNode(node, className = '', children = [], parent = null, ...dataAttr) {
+export default function domNode(node, className = '', children = [], parent = null, ...dataAttr) {
   const element = document.createElement(node);
 
   if (className) element.classList.add(...className.split(' '));

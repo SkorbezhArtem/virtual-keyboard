@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(-220deg, #616161 0%, #9bc5c3 100%);
   font-size: 20px;
   color: #fff;
   font-family: 'Concert One', cursive;
@@ -74,7 +74,7 @@ body {
   display: grid;
   gap: 10px;
   user-select: none;
-  padding: 5px;
+  padding: 15px;
   background: #ffffff;
   border-radius: 10px;
 }
@@ -133,7 +133,7 @@ body {
 }
 
 [data-code="Space"] {
-  flex-grow: 11;
+  flex-grow: 22;
 }
 
 [data-code="ArrowLeft"],
@@ -141,6 +141,7 @@ body {
 [data-code="ArrowDown"],
 [data-code="ArrowRight"] {
   flex-grow: 0;
+  color: #a00000;
 }
 
 [data-code="Enter"] {
