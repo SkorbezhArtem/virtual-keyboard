@@ -97,12 +97,19 @@ export default class Keyboard {
       if (code.includes('AltRight') && this.ctrlKey) this.changeLang();
 
       if (!this.isCaps) {
-        this.printToTextarea(keyObject, this.shiftKey ? keyObject.shift : keyObject.key);
-      } else {
-        this.printToTextarea(
-          keyObject,
-          this.shiftKey ? keyObject.keyShift.innerHTML || keyObject.shift : keyObject.key,
-        );
+        this.printToTextarea(keyObject, this.shiftKey
+          ? keyObject.shift
+          : keyObject.key);
+      } else if (this.isCaps) {
+        if (this.shiftKey) {
+          this.printToTextarea(keyObject, keyObject.keyShift.innerHTML
+            ? keyObject.shift
+            : keyObject.key);
+        } else {
+          this.printToTextarea(keyObject, !keyObject.keyShift.innerHTML
+            ? keyObject.shift
+            : keyObject.key);
+        }
       }
     } else if (type.match(/keyup|mouseup/)) {
       if (code.includes('Shift')) {
